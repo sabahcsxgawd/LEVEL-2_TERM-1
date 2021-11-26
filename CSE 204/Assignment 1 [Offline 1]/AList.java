@@ -71,7 +71,7 @@ public class AList<E> implements ListADT<E> {
     @Override
     public E remove() {
         if ((curr < 0 || curr >= listSize)) {
-            System.out.println("Invalid current position");
+//            System.out.println("Invalid current position");
             return null;
         }
         E temp = listArray[curr];
@@ -100,7 +100,7 @@ public class AList<E> implements ListADT<E> {
         if (curr != 0) {
             curr--;
         } else {
-            System.out.println("No previous element found");
+//            System.out.println("No previous element found");
         }
     }
 
@@ -109,7 +109,7 @@ public class AList<E> implements ListADT<E> {
         if (curr < listSize - 1) {
             curr++;
         } else {
-            System.out.println("No next element found");
+//            System.out.println("No next element found");
         }
     }
 
@@ -135,7 +135,7 @@ public class AList<E> implements ListADT<E> {
     @Override
     public E getValue() {
         if ((curr < 0) || (curr >= listSize)) {
-            System.out.println("No element in current position");
+//            System.out.println("No element in current position");
             return null;
         }
         return listArray[curr];

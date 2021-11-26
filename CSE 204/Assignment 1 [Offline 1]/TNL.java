@@ -134,17 +134,17 @@ public class TNL {
         int taskNumber = scn.nextInt();
 //        scn.nextLine();
 
-        AList<Integer> RSList = new AList<>(K, K + 1, RS);
-        AList<Integer> BSList = new AList<>(L, K + 1, BS);
-        AList<Integer> TSList = new AList<>(M, K + 1, TS);
+//        AList<Integer> RSList = new AList<>(K, K + 1, RS);
+//        AList<Integer> BSList = new AList<>(L, K + 1, BS);
+//        AList<Integer> TSList = new AList<>(M, K + 1, TS);
 
-//        LList<Integer> RSList = new LList<>(K,K+1,RS);
-//        LList<Integer> BSList = new LList<>(L,K+1,BS);
-//        LList<Integer> TSList = new LList<>(M,K+1,TS);
+        LList<Integer> RSList = new LList<>(K,K+1,RS);
+        LList<Integer> BSList = new LList<>(L,K+1,BS);
+        LList<Integer> TSList = new LList<>(M,K+1,TS);
 
         if (taskNumber == 1) {
-            printArray(RSList, BSList, TSList, K);
-//            printLL(RSList,BSList,TSList,K);
+//            printArray(RSList, BSList, TSList, K);
+            printLL(RSList,BSList,TSList,K);
         }
     }
 
