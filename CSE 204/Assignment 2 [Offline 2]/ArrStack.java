@@ -8,26 +8,39 @@ public class ArrStack<E> implements StackADT<E> {
     private int maxSize;
     private E[] listArray;
 
-    public ArrStack(int direction) {
-        this(defaultSize, direction);
-    }
+//    public ArrStack(int size, int direction, E[] Arr) {
+//        //this(size, direction);
+//        for (E item : Arr) {
+//            this.push(item);
+//        }
+////        this.maxSize = this.chunkSize = size;
+////        this.direction = direction;
+////        this.listArray = Arr;
+////        if(direction == 1) {
+////            this.top = this.listArray.length;
+////        }
+////        else {
+////            this.top = -1;
+////        }
+//    }
 
-    public ArrStack(int size, int direction, E[] Arr) {
-        this(size, direction);
-        for (E item : Arr) {
-            this.push(item);
-        }
-    }
-
-    public ArrStack(int size, int direction) {
-        this.maxSize = this.chunkSize = size;
+    public ArrStack(int direction,E[] arr) {
+        this.listArray = arr;
         this.direction = direction;
-        this.listArray = (E[]) new Object[this.maxSize];
-        if (direction == 1) {
+        this.maxSize = this.chunkSize = arr.length;
+        if(direction == 1) {
             this.top = 0;
-        } else {
-            this.top = this.maxSize - 1;
         }
+        else {
+            this.top = arr.length-1;
+        }
+    }
+
+    public ArrStack(int size) {
+        this.maxSize = this.chunkSize = size;
+        this.direction = 1;
+        this.listArray = (E[]) new Object[this.maxSize];
+        this.top = 0;
     }
 
     //helper function

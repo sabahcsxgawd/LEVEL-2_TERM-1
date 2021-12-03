@@ -51,13 +51,6 @@ public class LLStack<E> implements StackADT<E> {
         this.top = new Link<E>(null,null);
     }
 
-    public LLStack(E[] arr) {
-        this.size = 0;
-        this.top = new Link<E>(null,null);
-        for(int i=0;i<arr.length;i++) {
-            this.push(arr[i]);
-        }
-    }
 
     @Override
     public void clear() {

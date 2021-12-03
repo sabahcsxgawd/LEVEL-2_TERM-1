@@ -40,11 +40,11 @@ public class main1 {
     private static void checkArrStackImp() {
         Scanner scn = new Scanner(System.in);
         int size = scn.nextInt();
-        Integer[] arr = new Integer[size];
+        ArrStack Arr = new ArrStack(size);
+//        Integer[] arr = new Integer[size];
         for (int i = 0; i < size; i++) {
-            arr[i] = scn.nextInt();
+            Arr.push(scn.nextInt());
         }
-        ArrStack Arr = new ArrStack(size, -1, arr);
 
         printArrStack(Arr);
 
@@ -88,11 +88,11 @@ public class main1 {
     private static void checkLLStackImp() {
         Scanner scn = new Scanner(System.in);
         int size = scn.nextInt();
+        LLStack Arr = new LLStack();
         Integer[] arr = new Integer[size];
         for (int i = 0; i < size; i++) {
-            arr[i] = scn.nextInt();
+            Arr.push(scn.nextInt());
         }
-        LLStack Arr = new LLStack(arr);
 
         printLLStack(Arr);
 
