@@ -48,7 +48,7 @@ class Customer {
 }
 
 
-public class Bank2 {
+public class Bank {
     private static void LLQueueBank() {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
