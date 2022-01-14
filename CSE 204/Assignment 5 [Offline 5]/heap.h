@@ -60,7 +60,7 @@ class Heap {
         delete[] this -> arr;
     }
     void insert(int value) {
-        if (this -> arr[0] <= this -> maxSize) {
+        if (this -> arr[0] < this -> maxSize) {
             this -> arr[0]++;
             this -> arr[this -> arr[0]] = value;
             int temp = this -> arr[0];
@@ -73,14 +73,14 @@ class Heap {
                 }
             }
         } else {
-            cout << "No space for new elements\n";
+            cout << "No space for new keys\n";
         }
     }
     int getMax() {
         if (this -> arr[0] > 0) {
             return this -> arr[1];
         } else {
-            cout << "No max element exists\n";
+            cout << "No max key exists\n";
         }
     }
     void deleteKey() {
@@ -89,7 +89,7 @@ class Heap {
             this -> arr[0]--;
             this -> maxHeapify(1);
         } else {
-            cout << "No elements to delete\n";
+            cout << "No keys to delete\n";
         }
     }
     int size() {
