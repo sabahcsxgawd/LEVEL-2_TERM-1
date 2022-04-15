@@ -1,0 +1,53 @@
+The given outputs are given considering that if a customer has options to join the queue of both the booth then he will join queue of booth 1.
+
+Sample 1:
+Input:
+10
+2 5
+3 6
+5 10
+6 5
+8 6
+9 3
+10 5
+12 7
+15 5
+16 4
+
+Output:
+32 29 (other answers are possible)
+-------------------------------------
+
+Sample 2:
+Input:
+3
+0 10
+1 2
+2 5
+
+Output:
+10 8 (other answers are possible)
+----------------------------------------
+
+Sample 3:
+Input:
+3
+0 2
+0 10
+15 3
+
+Output:
+18 10 (other answers are possible)
+----------------------------------------
+
+Sample 4:
+Input:
+4
+1 12
+2 7
+3 1
+9 2
+
+Output:
+13 12 (other answers are possible)
+
